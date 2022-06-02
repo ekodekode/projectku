@@ -14,3 +14,34 @@
     backdrop-filter: blur(2px);
   }
 }
+@layer utilities {
+  .chat-support::-webkit-scrollbar {
+    background: white;
+    padding: 10px;
+    width: 8px;
+  }
+  .chat-support::-webkit-scrollbar-thumb {
+    background: #48bb78;
+    transition: 0.5s;
+  }
+  .chat-support::-webkit-scrollbar-thumb:hover {
+    background: #40a86b;
+  }
+  .chat-support {
+    height: 0;
+    transition: 0.5s;
+  }
+  .chat-support.expand {
+    height: 400px;
+  }
+
+  .chat-modal {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  .chat-modal.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

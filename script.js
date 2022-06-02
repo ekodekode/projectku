@@ -44,3 +44,28 @@ function openModal(value) {
     setTimeout(() => overlayCl.classList.add('hidden'), 300);
   }
 }
+
+// ----live chat--- //
+const chatModal = document.querySelector('.chat-modal');
+const chatSupport = document.querySelector('.chat-support');
+
+const showChat = document.querySelector('.show-chat');
+const closeChat = document.querySelector('.close-chat');
+
+showChat.addEventListener('click', function () {
+  chatModal.classList.add('show');
+  showChat.classList.add('hidden');
+  setTimeout(() => {
+    chatSupport.classList.add('expand');
+  }, 500);
+});
+
+closeChat.addEventListener('click', function () {
+  chatSupport.classList.remove('expand');
+  setTimeout(() => {
+    showChat.classList.remove('hidden');
+  }, 820);
+  setTimeout(() => {
+    chatModal.classList.remove('show');
+  }, 500);
+});
