@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
+
+@layer utilities {
+  .bg-image {
+    background-image: url(/garuda4.png);
+  }
+  .backdrop {
+    backdrop-filter: blur(2px);
+  }
+}
