@@ -45,3 +45,34 @@
     transform: translateX(0);
   }
 }
+
+@layer components {
+  .tanah {
+    width: 130px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .tanah::after {
+    content: '';
+    display: block;
+    background: url(../game/gamept/img/tanah.png);
+    background-size: 100%;
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    bottom: -150px;
+  }
+  .tikus {
+    width: 80%;
+    height: 80%;
+    background: url(../game/gamept/img/tikus.png);
+    background-size: 100%;
+    position: absolute;
+    top: 170px;
+    transition: top 0.3s;
+  }
+  .tanah.muncul .tikus {
+    top: 50px;
+  }
+}

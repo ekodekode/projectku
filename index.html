@@ -84,7 +84,7 @@
             </span>
             <div class="absolute top-full mt-1 hidden w-max min-w-full rounded bg-gray-600 shadow-md group-focus:block  ">
               <ul class="rounded border text-left">
-                <li class="border-b border-gray-500 px-4 py-1 hover:bg-gray-700"><a href="">Pukul Tikus</a></li>
+                <li class="border-b border-gray-500 px-4 py-1 hover:bg-gray-700"><a href="">Pencet Tikus</a></li>
                 <li class="border-b border-gray-500 px-4 py-1 hover:bg-gray-700"><a href="">Tembak Burung</a></li>
                 <li class="border-b border-gray-500 px-4 py-1 hover:bg-gray-700"><a href="#gamesuit">Suit Jawa</a></li>
                
@@ -100,9 +100,9 @@
     <section>
       <div class=" flex pt-10 justify-between">
               <div class=" self-center px-5">
-                <h1 class="text-base font-semibold text-pink-600 dark:text-white md:text-xl">Hallo Semua 🙌, Saya <span class="block text-4xl font-bold dark:text-white text-slate-900">Eko Prasetiyo</span></h1>
-                <h2 class="mb-5 mt-1 text-sm font-medium dark:text-neutral-400 text-neutral-600">Guru Mapel & Operator Sekolah</h2>
-                <p class="mb-10 font-medium leading-relaxed dark:text-neutral-400 text-neutral-600">Website ini dibuat menggunakan Tailwindcss, <span class="font-semibold text-slate-900 dark:text-neutral-200">SEMANGAT!!!</span></p>
+                <h1 class="text-base font-semibold text-pink-600 dark:text-white md:text-xl">Hallo Semua 🙌, Saya <span class="block text-4xl font-bold dark:text-white text-slate-900">Eko Prasetiyo</span></h1> 
+                <h2 class="mb-5 mt-1 text-sm font-medium dark:text-neutral-400 text-neutral-600">Guru, Operator Sekolah, Sekaligus Web Development</h2>
+                <p class="mb-10 font-medium leading-relaxed dark:text-neutral-400 text-neutral-600">Website ini dibuat menggunakan Tailwindcss, dan Vanilla Javascript <span class="font-semibold text-slate-900 dark:text-neutral-200">SEMANGAT!!!</span></p>
           </div>
       <div class="w-full  lg:w-3/6 lg:mr-10">
             <h3 class="mb-4 text-2xl font-semibold text-slate-900 lg:text-3xl dark:text-white">Mari Berteman</h3>
@@ -179,7 +179,7 @@
             <h3 class="mb-5 text-3xl font-bold text-slate-900 dark:text-white lg:text-2xl">Seorang Guru, Mata Pelajaran Pendidikan Pancasila dan Kewarganegaraan.</h3>
             <p class="max-w-xl text-base font-medium text-neutral-600 dark:text-neutral-400 lg:text-lg">
               Mengajar Sebagai Guru Tetap Yayasan Pondok Modern Selamat Kendal, Menjabat Sebagai Wakil Kepala Sekolah Bagian Sarana Dan Prasarana, Menjabat Sebagai Proktor Ujian Nasional Tahun 2020, Pembina Ekstra Kulikuler, Menjabat
-              Sebagai Wali Kelas, dan Guru Mapel PPKn, dan Operator Sekolah
+              Sebagai Wali Kelas, dan Guru Mapel PPKn, Operator Sekolah, dan Web Development
             </p>
           </div>
         </div>
@@ -237,34 +237,75 @@
     </section>
     <!-- kontak akhir -->
 
-    <!-- gamesuit awal -->
-    <div id="gamesuit" class="flex justify-center py-10 ">
-      <div class="">
-        <div class=" relative rounded-lg shadow shadow-pink-300 pb-2 mt-5 pt-7 flex justify-center py-1">
-          <div class=" area-komputer p-1 hover:translate-y-2 hover:scale-105 transition duration-300 rotate-180">
-            <img class="img-komputer" src="./game/gamesuwit/img/semut.png" width="100" alt="" />
+    <!-- game -->
+<div id="game" class="sm:flex sm:justify-between  ">
+    <!-- gampt awal -->
+    
+        <div class="shadow shadow-indigo-500 cursor-pointer active:cursor-crosshair rounded-lg mx-auto my-auto">
+          <div class=" relative flex justify-center">
+            <h1 class= "absolute text-white font-bold shadow shadow-indigo-400 -top-3 px-2 rounded-lg">Game Pencet Tikus</h1>
+            <button type="button" class=" absolute py-3 px-1 left-0 -top-10 text-white font-semibold shadow shadow-indigo-400 rounded-full mulaipukul" onclick="mulaipukul()">Mulai</button>
+            <p class="absolute right-8 top-2 text-white text-lg font-bold">Skor :</p>
+            <p class="absolute right-3 top-2 text-white text-lg font-bold papan-skor"></p>
+            <ul class="tanah"> 
+              <li class="ml-3 tikus"></li>
+            </ul>
+            <ul class="tanah"> 
+              <li class="ml-3 tikus"></li>
+            </ul>
+            <ul class="tanah"> 
+              <li class="ml-3 tikus"></li>
+            </ul>
           </div>
-          <h1 class="absolute -top-3 bg-indigo-300 bg-opacity-30 text-center rounded-lg shadow shadow-pink-300 w-36 font-bold text-white">Game Suit Jawa</h1>
-          <p class="left-0 -bottom-3 absolute text-center rounded-full shadow shadow-pink-300 w-20 text-white bg-indigo-300 bg-opacity-30 font-semibold">Computer</p>
+          <div class="flex justify-center">
+            <ul class="tanah"> 
+              <li class="ml-3 tikus"></li>
+            </ul>
+            <ul class="tanah"> 
+              <li class="ml-3 tikus"></li>
+            </ul>
+            <ul class="tanah"> 
+              <li class="ml-3 tikus"></li>
+            </ul>
+          </div>
         </div>
-        <div class="flex justify-center">
-          <div class=" info text-white w-auto h-auto p-2 rounded-lg bg-slate-500 bg-opacity-30 shadow shadow-white font-bold">Klik dibawah 👇</div>
+        
+      <!-- gamept akhir -->
+
+      <!-- gamesuit -->
+        <div class="shadow shadow-pink-300 rounded-lg">
+          <div class="relative rounded-lg  pb-2 mt-5 pt-7 flex justify-center py-1">
+            <div class=" area-komputer p-1 hover:translate-y-2 hover:scale-105 transition duration-300 rotate-180">
+              <img class="img-komputer" src="./game/gamesuwit/img/semut.png" width="100" alt="" />
+              <p class="absolute rotate-180 text-center rounded-full shadow shadow-pink-300 w-20 text-white bg-indigo-300 bg-opacity-30 font-semibold">Computer</p>
+            </div>
+            <h1 class="absolute -top-8 bg-indigo-300 bg-opacity-30 text-center rounded-lg shadow shadow-pink-300 w-36 font-bold text-white">Game Suit Jawa</h1>
+            
+          </div>
+          <div class="flex justify-center">
+            <div class=" info text-white w-auto h-auto p-2 rounded-lg bg-slate-500 bg-opacity-30 shadow shadow-white font-bold">Klik dibawah 👇</div>
+          </div>
+          <ul class="area-player relative rounded-lg  flex justify-between sm:justify-center md:justify-center px-5 mb-5">
+            
+            <li class=" mt-5 hover:-translate-y-2 hover:scale-105 transition duration-300 rotate-90 mx-3">
+              <img class="gajah" src="./game/gamesuwit/img/gajah.png" width="100" alt="" />
+              <p class="absolute -right-10 top-14 -rotate-90 bg-center text-center rounded-full shadow shadow-pink-300 w-14 text-white bg-indigo-300 bg-opacity-30 font-semibold">Player</p>
+            </li>
+            <li class=" mt-5 transition hover:-translate-y-2 hover:scale-105 duration-300  mx-3">
+              <img class="orang" src="./game/gamesuwit/img/orang.png" width="100" alt="" />
+              <p class="absolute ml-6 text-center rounded-full shadow shadow-pink-300 w-14 text-white bg-indigo-300 bg-opacity-30 font-semibold">Player</p>
+            </li>
+            <li class=" mt-5 transition hover:-translate-y-2 hover:scale-105 duration-300  mx-3">
+              <img class="semut" src="./game/gamesuwit/img/semut.png" width="100" alt="" />
+              <p class="absolute ml-5 text-center rounded-full shadow shadow-pink-300 w-14 text-white bg-indigo-300 bg-opacity-30 font-semibold">Player</p>
+            </li>
+          </ul>
         </div>
-        <ul class="area-player relative rounded-lg shadow shadow-pink-300 flex justify-between sm:justify-center md:justify-center px-5 mb-5">
-          <p class="absolute -top-3 right-0 text-center rounded-full shadow shadow-pink-300 w-14 text-white bg-indigo-300 bg-opacity-30 font-semibold">Player</p>
-          <li class=" mt-5 hover:-translate-y-2 hover:scale-105 transition duration-300 rotate-90 mx-3">
-            <img class="gajah" src="./game/gamesuwit/img/gajah.png" width="100" alt="" />
-          </li>
-          <li class=" mt-5 transition hover:-translate-y-2 hover:scale-105 duration-300  mx-3">
-            <img class="orang" src="./game/gamesuwit/img/orang.png" width="100" alt="" />
-          </li>
-          <li class=" mt-5 transition hover:-translate-y-2 hover:scale-105 duration-300  mx-3">
-            <img class="semut" src="./game/gamesuwit/img/semut.png" width="100" alt="" />
-          </li>
-        </ul>
-      </div>
-   </div>
+    </div>
+  </div>
     <!-- gamesuit akhir -->
+
+    <!-- game akhir -->
 
     <!-- Live chat awal -->
     <div class="fixed bottom-0 right-0 ml-6 flex w-full flex-col items-end">
